@@ -9,18 +9,19 @@ import data from './sfpopos-data.json';
 
 
 function POPOSList() {
-  const spaces = data.map(({ title, address, images, hours }) => {
-
+  const spaces = data.map(({ title, address, images, hours }, i) => {
     return (
       <POPOSSpace
+        id={i}
         key={title}
         name={title}
         address={address}
         image={images[0]}
-        hours={hours} // add a new prop for hours here
+        hours={hours}
       />
     )
   })
+  
 
 
 
