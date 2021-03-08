@@ -11,8 +11,18 @@ function Title() {
         <div className="Title-Subtitle">San Francisco Privately Owned Public Open Spaces</div>
 
         <div>
-          <NavLink to="/">List</NavLink>
-          <NavLink to="/about">About</NavLink>
+        <NavLink
+          className="nav-link"
+          activeClassName="nav-link-active"
+          exact
+          to="/">List</NavLink>
+
+        <NavLink
+          className="nav-link"
+          activeClassName="nav-link-active"
+          to="/about">About</NavLink>
+      
+        
         </div>
 
       </header>

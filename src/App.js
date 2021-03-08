@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
-import Title from './Title';
-import POPOSList from './POPOSList';
-import Footer from './Footer';
+
+import Title from './components/Title';
+import POPOSList from './components/POPOSList';
+import Footer from './components/Footer';
 import { HashRouter as Router, Route } from 'react-router-dom';
-import About from './About';
-import POPOSDetails from './POPOSDetails';
+import About from './components/About';
+import POPOSDetails from './components/POPOSDetails';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/" component={POPOSList}/>
         <Route path="/about" component={About} />
         <Route path="/details/:id" component={POPOSDetails} />
+        <Footer/>
       
       </div>
     </Router>
